@@ -22,7 +22,7 @@ const Trending = () => {
         <div className="carContainer grid">
           {/* Single Car Grid */}
           <div className="singleCar grid"> 
-            <img src="src/Assets/audi.jpg" alt="Car Image" />
+            <img src="src/Assets/car10.jpg" alt="Car Image" />
             <h5 className="carTitle">
             Used 2019 Audi s4 Premium Plus
           </h5>
@@ -113,7 +113,7 @@ const Trending = () => {
           </div>
           {/* Single Car Grid */}
           <div className="singleCar grid"> 
-            <img src="src/Assets/isuzu.jpg" alt="Car Image" />
+            <img src="src/Assets/car11.jpg" alt="Car Image" />
             <h5 className="carTitle">
             Used 2019 Audi s4 Premium Plus
           </h5>
@@ -135,7 +135,7 @@ const Trending = () => {
           </div>
           {/* Single Car Grid */}
           <div className="singleCar grid"> 
-            <img src="src/Assets/ford.jpg" alt="Car Image" />
+            <img src="src/Assets/car12.jpg" alt="Car Image" />
             <h5 className="carTitle">
             Used 2019 Audi s4 Premium Plus
           </h5>

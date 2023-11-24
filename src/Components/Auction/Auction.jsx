@@ -23,7 +23,7 @@ const Auction = () => {
         <div className="carContainer grid">
           {/* Single Car Grid */}
           <div className="singleCar grid"> 
-            <img src="src/Assets/audi.jpg" alt="Car Image" />
+            <img src="src/Assets/car13.jpg" alt="Car Image" />
             <h5 className="carTitle">
             Used 2019 Audi s4 Premium Plus
           </h5>
