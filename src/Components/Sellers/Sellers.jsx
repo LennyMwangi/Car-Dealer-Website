@@ -1,6 +1,11 @@
 import React from 'react'
 import './Sellers.css'
 
+import toyota from '../../Assets/toyota.png'
+import MercedesBenz from '../../Assets/MercedesBenz.png'
+import Volkswagen from '../../Assets/Volkswagen.png'
+import Hyundai from '../../Assets/Hyundai.png'
+
 const Sellers = () => {
   return (
     <div className='sellers section'>
@@ -17,7 +22,7 @@ const Sellers = () => {
           {/* Single seller */}
           <div className="singleSeller flex">
             <div className="imgDiv flex">
-              <img src="src/Assets/toyota.png" alt="" className='img'/>
+              <img src={toyota} alt="" className='img'/>
             </div>
             <span className="info">
               <h4 className="name">
@@ -30,7 +35,7 @@ const Sellers = () => {
           {/* Single seller */}
           <div className="singleSeller flex">
             <div className="imgDiv flex">
-              <img src="src/Assets/MercedesBenz.png" alt="" className='img'/>
+              <img src={MercedesBenz} alt="" className='img'/>
             </div>
             <span className="info">
               <h4 className="name">
@@ -43,7 +48,7 @@ const Sellers = () => {
           {/* Single seller */}
           <div className="singleSeller flex">
             <div className="imgDiv flex">
-              <img src="src/Assets/Volkswagen.png" alt="" className='img'/>
+              <img src={Volkswagen} alt="" className='img'/>
             </div>
             <span className="info">
               <h4 className="name">
@@ -56,7 +61,7 @@ const Sellers = () => {
           {/* Single seller */}
           <div className="singleSeller flex">
             <div className="imgDiv flex">
-              <img src="src/Assets/Hyundai.png" alt="" className='img'/>
+              <img src={Hyundai} alt="" className='img'/>
             </div>
             <span className="info">
               <h4 className="name">

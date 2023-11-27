@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import './Navbar.css'
-// import logo from '../../Assets/car.png'
+
+import car from '../../Assets/car.png'
 
 import {IoIosCloseCircle} from 'react-icons/io'
 import {TbGridDots} from 'react-icons/tb'
@@ -29,7 +30,7 @@ const Navbar = () => {
   return (
     <div className={header}>
       <div className="logoDiv">
-        <img src='src/Assets/car.png' alt="logo Image" className='logo'/>
+        <img src={car} alt="logo Image" className='logo'/>
       </div>
 
       <div className={navbar}>
