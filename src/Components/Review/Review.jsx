@@ -5,6 +5,9 @@ import {BsArrowRightShort} from 'react-icons/bs'
 import {BsArrowLeftShort} from 'react-icons/bs'
 import {AiFillStar} from 'react-icons/ai'
 
+import carR from '../../Assets/carR.jpg'
+import user1 from '../../Assets/user1.jpg'
+
 const Review = () => {
   return (
     <div className='review section'>
@@ -27,7 +30,7 @@ const Review = () => {
 
                 <div className="singleReview grid">
                     <div className="imgDiv">
-                        <img src="src/Assets/carR.jpg" alt="car image" />
+                        <img src={carR} alt="car image" />
                     </div>
                     <h5 className="reviewTitle">
                         2023 Cadiallac
@@ -39,7 +42,7 @@ const Review = () => {
                     <div className="reviewerDiv flex">
                             <div className="leftDiv flex">
                                 <div className="reviwerImage">
-                                    <img src="src/Assets/user1.jpg" alt="reviewer image" />
+                                    <img src={user1}alt="reviewer image" />
                                 </div>
                                 <div className="aboutReviwer">
                                     <span className="name">

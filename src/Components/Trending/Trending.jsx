@@ -4,6 +4,14 @@ import './Trending.css'
  import {BsArrowRightShort} from 'react-icons/bs'
  import {BsArrowLeftShort} from 'react-icons/bs'
 
+ import car10 from '../../Assets/car10.jpg'
+ import car7 from '../../Assets/car7.jpg'
+ import car8 from '../../Assets/car8.jpg'
+ import car9 from '../../Assets/car9.jpg'
+ import car11 from '../../Assets/car11.jpg'
+ import car12 from '../../Assets/car12.jpg'
+
+
 const Trending = () => {
   return (
     <div className='trending section'>
@@ -22,7 +30,7 @@ const Trending = () => {
         <div className="carContainer grid">
           {/* Single Car Grid */}
           <div className="singleCar grid"> 
-            <img src="src/Assets/car10.jpg" alt="Car Image" />
+            <img src={car10} alt="Car Image" />
             <h5 className="carTitle">
             Used 2019 Audi s4 Premium Plus
           </h5>
@@ -45,7 +53,7 @@ const Trending = () => {
 
           {/* Single Car Grid */}
           <div className="singleCar grid"> 
-            <img src="src/Assets/car7.jpg" alt="Car Image" />
+            <img src={car7} alt="Car Image" />
             <h5 className="carTitle">
             Used 2019 Audi s4 Premium Plus
           </h5>
@@ -68,7 +76,7 @@ const Trending = () => {
 
           {/* Single Car Grid */}
           <div className="singleCar grid"> 
-            <img src="src/Assets/car8.jpg" alt="Car Image" />
+            <img src={car8} alt="Car Image" />
             <h5 className="carTitle">
             Used 2019 Audi s4 Premium Plus
           </h5>
@@ -91,7 +99,7 @@ const Trending = () => {
 
           {/* Single Car Grid */}
           <div className="singleCar grid"> 
-            <img src="src/Assets/car9.jpg" alt="Car Image" />
+            <img src={car9} alt="Car Image" />
             <h5 className="carTitle">
             Used 2019 Audi s4 Premium Plus
           </h5>
@@ -113,7 +121,7 @@ const Trending = () => {
           </div>
           {/* Single Car Grid */}
           <div className="singleCar grid"> 
-            <img src="src/Assets/car11.jpg" alt="Car Image" />
+            <img src={car11} alt="Car Image" />
             <h5 className="carTitle">
             Used 2019 Audi s4 Premium Plus
           </h5>
@@ -135,7 +143,7 @@ const Trending = () => {
           </div>
           {/* Single Car Grid */}
           <div className="singleCar grid"> 
-            <img src="src/Assets/car12.jpg" alt="Car Image" />
+            <img src={car12} alt="Car Image" />
             <h5 className="carTitle">
             Used 2019 Audi s4 Premium Plus
           </h5>

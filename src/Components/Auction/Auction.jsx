@@ -5,6 +5,14 @@ import './Auction.css'
 import {BsArrowRightShort} from 'react-icons/bs'
 import {BsArrowLeftShort} from 'react-icons/bs'
 
+import car13 from '../../Assets/car13.jpg'
+import car5 from '../../Assets/car5.jpg'
+import car6 from '../../Assets/car6.jpg'
+import car4 from '../../Assets/car4.jpg'
+import car3 from '../../Assets/car3.jpg'
+import car2 from '../../Assets/car2.jpg'
+import car1 from '../../Assets/car1.jpg'
+
 const Auction = () => {
   return (
     <div className='auction section'>
@@ -23,7 +31,7 @@ const Auction = () => {
         <div className="carContainer grid">
           {/* Single Car Grid */}
           <div className="singleCar grid"> 
-            <img src="src/Assets/car13.jpg" alt="Car Image" />
+            <img src={car13} alt="Car Image" />
             <h5 className="carTitle">
             Used 2019 Audi s4 Premium Plus
           </h5>
@@ -46,7 +54,7 @@ const Auction = () => {
 
            {/* Single Car Grid */}
            <div className="singleCar grid singleCarActive"> 
-            <img src="src/Assets/car5.jpg" alt="Car Image" />
+            <img src={car5} alt="Car Image" />
             <h5 className="carTitle">
             Used 2019 Audi s4 Premium Plus
           </h5>
@@ -69,7 +77,7 @@ const Auction = () => {
 
            {/* Single Car Grid */}
            <div className="singleCar grid"> 
-            <img src="src/Assets/car6.jpg" alt="Car Image" />
+            <img src={car6} alt="Car Image" />
             <h5 className="carTitle">
             Used 2019 Audi s4 Premium Plus
           </h5>
@@ -92,7 +100,7 @@ const Auction = () => {
 
            {/* Single Car Grid */}
            <div className="singleCar grid singleCarActive"> 
-            <img src="src/Assets/car4.jpg" alt="Car Image" />
+            <img src={car4} alt="Car Image" />
             <h5 className="carTitle">
             Used 2019 Audi s4 Premium Plus
           </h5>
@@ -115,7 +123,7 @@ const Auction = () => {
 
            {/* Single Car Grid */}
            <div className="singleCar grid"> 
-            <img src="src/Assets/car3.jpg" alt="Car Image" />
+            <img src={car3} alt="Car Image" />
             <h5 className="carTitle">
             Used 2019 Audi s4 Premium Plus
           </h5>
@@ -138,7 +146,7 @@ const Auction = () => {
 
            {/* Single Car Grid */}
            <div className="singleCar grid singleCarActive"> 
-            <img src="src/Assets/car2.jpg" alt="Car Image" />
+            <img src={car2} alt="Car Image" />
             <h5 className="carTitle">
             Used 2019 Audi s4 Premium Plus
           </h5>
@@ -161,7 +169,7 @@ const Auction = () => {
 
            {/* Single Car Grid */}
            <div className="singleCar grid"> 
-            <img src="src/Assets/car1.jpg" alt="Car Image" />
+            <img src={car1} alt="Car Image" />
             <h5 className="carTitle">
             Used 2019 Audi s4 Premium Plus
           </h5>
