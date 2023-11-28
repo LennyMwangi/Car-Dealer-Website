@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import './Auction.css'
 
 
@@ -13,11 +13,25 @@ import car3 from '../../Assets/car3.jpg'
 import car2 from '../../Assets/car2.jpg'
 import car1 from '../../Assets/car1.jpg'
 
+ // import Aos for animation and scroll reveal
+ import Aos from 'aos'
+ import 'aos/dist/aos.css'
+
 const Auction = () => {
+
+  // Initialise Aos and set the default animation duration
+  useEffect(()=>{
+    Aos.init(
+      {
+        duration: 2000
+      }
+    )
+  }, [])
+
   return (
     <div className='auction section'>
       <div className="secContainer container">
-        <div className="secHeading flex">
+        <div data-aos='fade-up' className="secHeading flex">
         <h3 className="secTitle">
           Active Auctions
         </h3>
@@ -30,7 +44,7 @@ const Auction = () => {
 
         <div className="carContainer grid">
           {/* Single Car Grid */}
-          <div className="singleCar grid"> 
+          <div className="singleCar grid data-aos='fade-up'"> 
             <img src={car13} alt="Car Image" />
             <h5 className="carTitle">
             Used 2019 Audi s4 Premium Plus
@@ -53,7 +67,7 @@ const Auction = () => {
           </div>
 
            {/* Single Car Grid */}
-           <div className="singleCar grid singleCarActive"> 
+           <div className="singleCar grid singleCarActive"  data-aos='fade-up'> 
             <img src={car5} alt="Car Image" />
             <h5 className="carTitle">
             Used 2019 Audi s4 Premium Plus
@@ -76,7 +90,7 @@ const Auction = () => {
           </div>
 
            {/* Single Car Grid */}
-           <div className="singleCar grid"> 
+           <div className="singleCar grid" data-aos='fade-up'> 
             <img src={car6} alt="Car Image" />
             <h5 className="carTitle">
             Used 2019 Audi s4 Premium Plus
@@ -99,7 +113,7 @@ const Auction = () => {
           </div>
 
            {/* Single Car Grid */}
-           <div className="singleCar grid singleCarActive"> 
+           <div className="singleCar grid singleCarActive" data-aos='fade-up'> 
             <img src={car4} alt="Car Image" />
             <h5 className="carTitle">
             Used 2019 Audi s4 Premium Plus
@@ -122,7 +136,7 @@ const Auction = () => {
           </div>
 
            {/* Single Car Grid */}
-           <div className="singleCar grid"> 
+           <div className="singleCar grid" data-aos='fade-up'> 
             <img src={car3} alt="Car Image" />
             <h5 className="carTitle">
             Used 2019 Audi s4 Premium Plus
@@ -145,7 +159,7 @@ const Auction = () => {
           </div>
 
            {/* Single Car Grid */}
-           <div className="singleCar grid singleCarActive"> 
+           <div className="singleCar grid singleCarActive" data-aos='fade-up'> 
             <img src={car2} alt="Car Image" />
             <h5 className="carTitle">
             Used 2019 Audi s4 Premium Plus
@@ -168,7 +182,7 @@ const Auction = () => {
           </div>
 
            {/* Single Car Grid */}
-           <div className="singleCar grid"> 
+           <div className="singleCar grid"  data-aos='fade-up'> 
             <img src={car1} alt="Car Image" />
             <h5 className="carTitle">
             Used 2019 Audi s4 Premium Plus

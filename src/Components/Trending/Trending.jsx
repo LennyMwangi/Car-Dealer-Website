@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import './Trending.css'
 
  import {BsArrowRightShort} from 'react-icons/bs'
@@ -11,12 +11,26 @@ import './Trending.css'
  import car11 from '../../Assets/car11.jpg'
  import car12 from '../../Assets/car12.jpg'
 
+ // import Aos for animation and scroll reveal
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+
 
 const Trending = () => {
+
+  // Initialise Aos and set the default animation duration
+  useEffect(()=>{
+    Aos.init(
+      {
+        duration: 2000
+      }
+    )
+  }, [])
+
   return (
     <div className='trending section'>
       <div className="secContainer container">
-        <div className="secHeading flex">
+        <div data-aos='fade-up' className="secHeading flex">
         <h3 className="secTitle">
           Trending Near You
         </h3>
@@ -29,7 +43,7 @@ const Trending = () => {
 
         <div className="carContainer grid">
           {/* Single Car Grid */}
-          <div className="singleCar grid"> 
+          <div data-aos='fade-up'className="singleCar grid"> 
             <img src={car10} alt="Car Image" />
             <h5 className="carTitle">
             Used 2019 Audi s4 Premium Plus
@@ -52,7 +66,7 @@ const Trending = () => {
           </div>
 
           {/* Single Car Grid */}
-          <div className="singleCar grid"> 
+          <div data-aos='fade-up' className="singleCar grid"> 
             <img src={car7} alt="Car Image" />
             <h5 className="carTitle">
             Used 2019 Audi s4 Premium Plus
@@ -75,7 +89,7 @@ const Trending = () => {
           </div>
 
           {/* Single Car Grid */}
-          <div className="singleCar grid"> 
+          <div data-aos='fade-up' className="singleCar grid"> 
             <img src={car8} alt="Car Image" />
             <h5 className="carTitle">
             Used 2019 Audi s4 Premium Plus
@@ -98,7 +112,7 @@ const Trending = () => {
           </div>
 
           {/* Single Car Grid */}
-          <div className="singleCar grid"> 
+          <div data-aos='fade-up' className="singleCar grid"> 
             <img src={car9} alt="Car Image" />
             <h5 className="carTitle">
             Used 2019 Audi s4 Premium Plus
@@ -120,7 +134,7 @@ const Trending = () => {
           </div>
           </div>
           {/* Single Car Grid */}
-          <div className="singleCar grid"> 
+          <div data-aos='fade-up'className="singleCar grid"> 
             <img src={car11} alt="Car Image" />
             <h5 className="carTitle">
             Used 2019 Audi s4 Premium Plus
@@ -142,7 +156,7 @@ const Trending = () => {
           </div>
           </div>
           {/* Single Car Grid */}
-          <div className="singleCar grid"> 
+          <div data-aos='fade-up' data-aos-duration='2000' className="singleCar grid"> 
             <img src={car12} alt="Car Image" />
             <h5 className="carTitle">
             Used 2019 Audi s4 Premium Plus

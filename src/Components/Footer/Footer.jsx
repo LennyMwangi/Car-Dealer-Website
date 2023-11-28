@@ -1,13 +1,25 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import './Footer.css'
+ // import Aos for animation and scroll reveal
+ import Aos from 'aos'
+ import 'aos/dist/aos.css'
 
 const Footer = () => {
+      // Initialise Aos and set the default animation duration
+      useEffect(()=>{
+        Aos.init(
+          {
+            duration: 2000
+          }
+        )
+      }, [])
+    
   return (
     <div className='footer'>
       <div className="footerContainer container">
         <div className="footerMenuDiv grid">
           {/* Single grid1 */}
-          <div className="singlrGrid">
+          <div data-aos='fade-up' className="singleGrid">
             <span className="footerTitle">
               About
             </span>
@@ -28,7 +40,7 @@ const Footer = () => {
           </div>
 
           {/* Single grid2 */}
-          <div className="singlrGrid">
+          <div data-aos='fade-up' className="singleGrid">
             <span className="footerTitle">
               Become seller
             </span>
@@ -49,7 +61,7 @@ const Footer = () => {
           </div>
 
           {/* Single grid3 */}
-          <div className="singlrGrid">
+          <div data-aos='fade-up' className="singleGrid">
             <span className="footerTitle">
               Community
             </span>
@@ -70,7 +82,7 @@ const Footer = () => {
           </div>
 
           {/* Single grid4 */}
-          <div className="singlrGrid">
+          <div data-aos='fade-up' className="singleGrid">
             <span className="footerTitle">
               Booking Support
             </span>
