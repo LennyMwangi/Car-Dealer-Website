@@ -1,5 +1,6 @@
 import React, {useEffect} from 'react'
 import './Auction.css'
+import './ImageComponent.css'
 
 
 import {BsArrowRightShort} from 'react-icons/bs'
@@ -45,7 +46,7 @@ const Auction = () => {
         <div className="carContainer grid">
           {/* Single Car Grid */}
           <div className="singleCar grid data-aos='fade-up'"> 
-            <img src={car13} alt="Car Image" />
+            <img className="image-container" src={car13} alt="Car Image" />
             <h5 className="carTitle">
             Used 2019 Audi s4 Premium Plus
           </h5>
@@ -68,7 +69,7 @@ const Auction = () => {
 
            {/* Single Car Grid */}
            <div className="singleCar grid singleCarActive"  data-aos='fade-up'> 
-            <img src={car5} alt="Car Image" />
+            <img className="image-container" src={car5} alt="Car Image" />
             <h5 className="carTitle">
             Used 2019 Audi s4 Premium Plus
           </h5>
@@ -91,7 +92,7 @@ const Auction = () => {
 
            {/* Single Car Grid */}
            <div className="singleCar grid" data-aos='fade-up'> 
-            <img src={car6} alt="Car Image" />
+            <img className="image-container" src={car6} alt="Car Image" />
             <h5 className="carTitle">
             Used 2019 Audi s4 Premium Plus
           </h5>
@@ -114,7 +115,7 @@ const Auction = () => {
 
            {/* Single Car Grid */}
            <div className="singleCar grid singleCarActive" data-aos='fade-up'> 
-            <img src={car4} alt="Car Image" />
+            <img className="image-container" src={car4} alt="Car Image" />
             <h5 className="carTitle">
             Used 2019 Audi s4 Premium Plus
           </h5>
@@ -137,7 +138,7 @@ const Auction = () => {
 
            {/* Single Car Grid */}
            <div className="singleCar grid" data-aos='fade-up'> 
-            <img src={car3} alt="Car Image" />
+            <img className="image-container" src={car3} alt="Car Image" />
             <h5 className="carTitle">
             Used 2019 Audi s4 Premium Plus
           </h5>
@@ -160,7 +161,7 @@ const Auction = () => {
 
            {/* Single Car Grid */}
            <div className="singleCar grid singleCarActive" data-aos='fade-up'> 
-            <img src={car2} alt="Car Image" />
+            <img className="image-container" src={car2} alt="Car Image" />
             <h5 className="carTitle">
             Used 2019 Audi s4 Premium Plus
           </h5>
@@ -183,7 +184,7 @@ const Auction = () => {
 
            {/* Single Car Grid */}
            <div className="singleCar grid"  data-aos='fade-up'> 
-            <img src={car1} alt="Car Image" />
+            <img className="image-container" src={car1} alt="Car Image" />
             <h5 className="carTitle">
             Used 2019 Audi s4 Premium Plus
           </h5>

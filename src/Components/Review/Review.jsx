@@ -1,5 +1,6 @@
 import React, {useEffect} from 'react'
 import './Review.css'
+import './ImageComponent.css'
 
 import {BsArrowRightShort} from 'react-icons/bs'
 import {BsArrowLeftShort} from 'react-icons/bs'
@@ -46,7 +47,7 @@ const Review = () => {
             <div className="reviewContainer grid">
                 {/* single review */}
                 <div className="singleReview grid" data-aos='fade-up'>
-                    <div className="imgDiv">
+                    <div className="imgDiv image-container">
                         <img src={carR} alt="car image" />
                     </div>
                     <h5 className="reviewTitle">
@@ -77,7 +78,7 @@ const Review = () => {
 
                 {/* single review */}
                 <div className="singleReview grid" data-aos='fade-up'>
-                    <div className="imgDiv">
+                    <div className="imgDiv image-container">
                         <img src={carR1} alt="car image" />
                     </div>
                     <h5 className="reviewTitle">
@@ -108,7 +109,7 @@ const Review = () => {
 
                 {/* single review */}
                 <div className="singleReview grid" data-aos='fade-up'>
-                    <div className="imgDiv">
+                    <div className="imgDiv image-container">
                         <img src={carR2} alt="car image" />
                     </div>
                     <h5 className="reviewTitle">
